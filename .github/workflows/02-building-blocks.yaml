@@ -1,6 +1,10 @@
 name: 02 - Building Events
 on: 
     push:
+    pull_request:
+    schedule:
+      - cron: '* * * * *'
+    workflow_dispatch:
 
 jobs:
   echo:
