@@ -3,13 +3,13 @@ on:
     push:
 
 jobs:
-    name: build
+  build:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout code
-            uses: actions/checkout@v4
-        - name: Printing Folders
-            run: ls -la
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Printing Folders
+        run: ls -la
 
 
     
