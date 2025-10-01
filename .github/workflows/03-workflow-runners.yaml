@@ -9,7 +9,7 @@ jobs:
       - name: Show OS
         run: |
           echo "This job is running on an Ubuntu Runner"
-          lsb_release -a
+          echo "Runner OS: $RUNNER_OS"
 
   windows-echo:
     runs-on: windows-latest
@@ -28,5 +28,5 @@ jobs:
           echo "This job is running on a MacOS Runner"
           sw_vers
           echo $RUNNER_OS
-          
+         
     
