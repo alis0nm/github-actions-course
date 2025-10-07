@@ -5,6 +5,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 1. checkout code
+    # 2. setup Node
+    # 3. install dependencies
+    # 4. run tests    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
